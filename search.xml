@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[vue初学之创建点赞组件]]></title>
+    <url>%2F2018%2F09%2F06%2Fvue%E5%88%9D%E5%AD%A6%E4%B9%8B%E5%88%9B%E5%BB%BA%E7%82%B9%E8%B5%9E%E7%BB%84%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[今天学习如何创建一个vue组件123456789101112131415161718192021222324252627//点赞组件Vue.component(&apos;likes&apos;,&#123; template: `&lt;button v-bind:class=&quot;&#123;liked:liked&#125;&quot; @click=&quot;toggleLike&quot;&gt; 赞 &#123;&#123;like_count&#125;&#125; &lt;/button&gt;`, data:function()&#123; return &#123; like_count:13, liked:false &#125; &#125;, methods:&#123; toggleLike:function()&#123; if(this.liked==false)&#123; this.like_count++; this.liked=true; &#125;else&#123; this.like_count--; this.liked=false; &#125; &#125; &#125;&#125;);new Vue(&#123; el:&apos;#app&apos;,&#125;)]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[sublime快捷方式]]></title>
     <url>%2F2018%2F09%2F06%2Fsublime%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[#sublime常用快捷键Ctrl + / —————-注释Ctrl + P —————-打开命令行进行模糊匹配，来查找文件Ctrl + Shift +V ———-粘贴过程中保持缩进Alt + F3 —————–选中选择的词，用来多行同时填写（或重写）Ctrl + H —————–替换Ctrl + W —————关闭当前文档Ctrl + D —————多行游标选择可以搭配 Ctrl + K取消选择部分游标产生游标的另外一种方式，按住Shift + 鼠标右键拖动光标Ctrl + Shift + D ———复制这行文本]]></content>
