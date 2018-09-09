@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[初学promise]]></title>
+    <url>%2F2018%2F09%2F09%2F%E5%88%9D%E5%AD%A6promise%2F</url>
+    <content type="text"><![CDATA[同步：同时只能做一件事异步：操作与操作之间没有关系，可以同时进行多个操作 异步：会让代码变得更复杂同步：代码简单 //例如淘宝网各个小版块数据读取1234567891011121314151617ajax(&apos;/banner&apos;,function(banner_data)&#123; ajax(&apos;/hotitems&apos;,function(banner_data)&#123; ajax(&apos;/siders&apos;,function(banner_data)&#123; ajax(&apos;/siders&apos;,function(banner_data)&#123; &#125;,function()&#123; alert(&apos;读取失败&apos;); &#125;); &#125;,function()&#123; alert(&apos;读取失败&apos;); &#125;); &#125;,function()&#123; alert(&apos;读取失败&apos;); &#125;);&#125;,function()&#123; alert(&apos;读取失败&apos;);&#125;); 同步:（假设有这种同步的ajax）1234let banner_data=ajax_async(&apos;baners&apos;);let hotitems_data=ajax_async(&apos;hotitems&apos;);let banners_data=ajax_async(&apos;baners&apos;);let banners_data=ajax_async(&apos;baners&apos;); promise：消除异步操作（同同步一样的方式，书写异步代码）Promise.all 全部要成功Promise.race 竞速，有一个成功就可以 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;Document&lt;/title&gt;&lt;/head&gt;&lt;body&gt; &lt;script src=&quot;jquery-3.3.1.js&quot;&gt;&lt;/script&gt; &lt;script&gt; //resolve成功了，reject失败了 function createPromise(url)&#123; return new Promise(function(resolve,reject)&#123; $.ajax(&#123; url, dataType:&apos;json&apos;, success(arr)&#123; resolve(arr); &#125;, error(err)&#123; reject(err); &#125; &#125;); &#125;); &#125; // p.then(function(arr)&#123; // let [res1,res2]=arr; // alert(&apos;成功了&apos;); // &#125;,function()&#123; // alert(&apos;失败了&apos;); // &#125;) Promise.all([ createPromise(&apos;arr.txt&apos;), createPromise(&apos;json.txt&apos;) ]).then(function(arr)&#123; let [res1,res2]=arr; alert(&apos;全部都成功了&apos;); &#125;,function()&#123; alert(&apos;至少有一个失败了&apos;); &#125;); //jQuery自带promise,$.ajax(...)返回一个promise对象 Promise.all([ $.ajax(&#123;url:&apos;arr.txt&apos;,dataType:&apos;json&apos;&#125;), $.ajax(&#123;url:&apos;json.txt&apos;,dataType:&apos;json&apos;&#125;), ]).then(function(results)&#123; let [arr,json]=results; alert(&apos;成功了&apos;); console.log(arr,json); &#125;,function()&#123; alert(&apos;失败了&apos;); &#125;); &lt;/script&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>EMCAscript</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[vue初学之创建点赞组件]]></title>
     <url>%2F2018%2F09%2F06%2Fvue%E5%88%9D%E5%AD%A6%E4%B9%8B%E5%88%9B%E5%BB%BA%E7%82%B9%E8%B5%9E%E7%BB%84%E4%BB%B6%2F</url>
     <content type="text"><![CDATA[今天学习如何创建一个vue组件123456789101112131415161718192021222324252627//点赞组件Vue.component(&apos;likes&apos;,&#123; template: `&lt;button v-bind:class=&quot;&#123;liked:liked&#125;&quot; @click=&quot;toggleLike&quot;&gt; 赞 &#123;&#123;like_count&#125;&#125; &lt;/button&gt;`, data:function()&#123; return &#123; like_count:13, liked:false &#125; &#125;, methods:&#123; toggleLike:function()&#123; if(this.liked==false)&#123; this.like_count++; this.liked=true; &#125;else&#123; this.like_count--; this.liked=false; &#125; &#125; &#125;&#125;);new Vue(&#123; el:&apos;#app&apos;,&#125;)]]></content>
@@ -11,7 +19,7 @@
   <entry>
     <title><![CDATA[sublime快捷方式]]></title>
     <url>%2F2018%2F09%2F06%2Fsublime%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[#sublime常用快捷键Ctrl + / —————-注释Ctrl + P —————-打开命令行进行模糊匹配，来查找文件Ctrl + Shift +V ———-粘贴过程中保持缩进Alt + F3 —————–选中选择的词，用来多行同时填写（或重写）Ctrl + H —————–替换Ctrl + W —————关闭当前文档Ctrl + D —————多行游标选择可以搭配 Ctrl + K取消选择部分游标产生游标的另外一种方式，按住Shift + 鼠标右键拖动光标Ctrl + Shift + D ———复制这行文本]]></content>
+    <content type="text"><![CDATA[sublime常用快捷键Ctrl + / —————-注释Ctrl + P —————-打开命令行进行模糊匹配，来查找文件Ctrl + Shift +V ———-粘贴过程中保持缩进Alt + F3 —————–选中选择的词，用来多行同时填写（或重写）Ctrl + H —————–替换Ctrl + W —————关闭当前文档Ctrl + D —————多行游标选择可以搭配 Ctrl + K取消选择部分游标产生游标的另外一种方式，按住Shift + 鼠标右键拖动光标Ctrl + Shift + D ———复制这行文本]]></content>
       <categories>
         <category>工具</category>
       </categories>
@@ -23,7 +31,7 @@
   <entry>
     <title><![CDATA[JavaScript加载时间线]]></title>
     <url>%2F2018%2F09%2F05%2FJavaScript%E5%8A%A0%E8%BD%BD%E6%97%B6%E9%97%B4%E7%BA%BF%2F</url>
-    <content type="text"><![CDATA[#JavaScript加载时间线创建Document对象，开始解析web页面。解析HTML元素和他们的文本内容后添加Element对象和Text节点到文档中。这个阶段 document.readyState = ‘loading’ 。遇到link外部css，创建线程加载，并继续解析文档。遇到script外部js，并且没有设置async、defer，浏览器加载，并阻塞，等待js加载完成并执行该脚本，然后继续解析文档。遇到script外部js，并且设置有async、defer，浏览器创建线程加载，并继续解析文档。 对于async属性的脚本，脚本加载完成后立即执行。（禁止使用document.write()）遇到img等，先正常解析dom结构，然后浏览器异步加载src，并继续解析文档。当文档解析完成，document.readyState = ‘interactive’ 。文档解析完成后，所有设置有defer的脚本会按照顺序执行。（禁止使用document.write()）;document对象触发DOMContentLoaded事件，这也标志着程序执行从同步脚本执行阶段，转化为事件驱动阶段。当所有async的脚本加载完成并执行后、img等加载完成后，document.readyState = ‘complete’，window对象触发load事件。从此，以异步响应方式处理用户输入、网络事件等。]]></content>
+    <content type="text"><![CDATA[JavaScript加载时间线创建Document对象，开始解析web页面。解析HTML元素和他们的文本内容后添加Element对象和Text节点到文档中。这个阶段 document.readyState = ‘loading’ 。遇到link外部css，创建线程加载，并继续解析文档。遇到script外部js，并且没有设置async、defer，浏览器加载，并阻塞，等待js加载完成并执行该脚本，然后继续解析文档。遇到script外部js，并且设置有async、defer，浏览器创建线程加载，并继续解析文档。 对于async属性的脚本，脚本加载完成后立即执行。（禁止使用document.write()）遇到img等，先正常解析dom结构，然后浏览器异步加载src，并继续解析文档。当文档解析完成，document.readyState = ‘interactive’ 。文档解析完成后，所有设置有defer的脚本会按照顺序执行。（禁止使用document.write()）;document对象触发DOMContentLoaded事件，这也标志着程序执行从同步脚本执行阶段，转化为事件驱动阶段。当所有async的脚本加载完成并执行后、img等加载完成后，document.readyState = ‘complete’，window对象触发load事件。从此，以异步响应方式处理用户输入、网络事件等。]]></content>
       <categories>
         <category>JavaScript</category>
       </categories>
