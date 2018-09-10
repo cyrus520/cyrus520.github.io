@@ -30,6 +30,14 @@
   </entry>
   <entry>
     <title><![CDATA[JavaScript加载时间线]]></title>
+    <url>%2F2018%2F09%2F05%2FECMAscript%E5%AD%A6%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[1 ES6解释ECMA是标准，JavaScript是实现类似于HTML5是标准，IE10，Chrome等是实现低版本浏览器主要支持ES3.1高级浏览器正在从ES5向ES6过渡 2 ES6兼容性ES6 IE10+，Chrome，移动端，Node.js 2.1 编译，转换：-在线转换：每次都需要加载，影响性能 引入browser.js -提前编译：Babel 2.2 ES6主要内容：变量 函数 数组 字符串 面向对象 Promise generator 模块化 3 变量let和const3.1 var缺点：可以重复声明 无法限制修改 没有块级作用域 {} let const 不能重复声明，块级作用域 const 不能修改，声明和赋值必须同时进行 1234567891011121314151617181920212223242526272829303132333435&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;Document&lt;/title&gt;&lt;/head&gt;&lt;body&gt; &lt;input type=&quot;button&quot; value=&quot;按钮1&quot;&gt; &lt;input type=&quot;button&quot; value=&quot;按钮2&quot;&gt; &lt;input type=&quot;button&quot; value=&quot;按钮3&quot;&gt; &lt;script&gt; var aBtn=document.getElementsByTagName(&apos;input&apos;); //打印全是3，要用闭包的方式解决 // for(var i=0;i&lt;aBtn.length;i++)&#123; // aBtn[i].onclick=function()&#123; // alert(i); // &#125; // &#125; //封一个立即执行函数 // for(var i=0;i&lt;aBtn.length;i++)&#123; // (function(i)&#123; // aBtn[i].onclick=function()&#123; // alert(i); // &#125; // &#125;)(i); // &#125; //使用let块级作用域 for(let i=0;i&lt;aBtn.length;i++)&#123; aBtn[i].onclick=function()&#123; alert(i); &#125; &#125; &lt;/script&gt;&lt;/body&gt;&lt;/html&gt; 4 箭头函数function name(){}()=&gt;{}去掉function，加一个=&gt;12345let arr=[12,45,778,45,4,77];arr.sort(function(a,b)&#123; return a-b;&#125;)arr.sort((a,b)=&gt;&#123;return a-b;&#125;); -如果只有一个参数，()可以省-如果只有一个return，{}可以省let show=a=&gt;a*2;show(5); 5 函数的参数5.1 参数的扩展/数组的展开收集剩余参数,rest parameter必须是最后一个 function show(a,b,...args){} 展开数组 展开后的效果，跟直接把数组的内容写在这儿一样 let arr1=[1,2,3]; //...arr1等价于1,2,3 let arr2=[4,5,6]; arr=[...arr1,...arr2]; 5.2 默认参数function show(a,b=12,c=1){ console.log(a,b,c); } show(12,45,88); 6 解构赋值-左右两边必须结构一样-右边必须是个东西-声明和赋值不能分开let [a,b,c]=[21,23,’faf’];let {a,b,c}={a:12,b:’nn’,c:45}; 7 数组map,reduce,filter,foreach]]></content>
+      <categories>
+        <category>ECMAscript</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[JavaScript加载时间线]]></title>
     <url>%2F2018%2F09%2F05%2FJavaScript%E5%8A%A0%E8%BD%BD%E6%97%B6%E9%97%B4%E7%BA%BF%2F</url>
     <content type="text"><![CDATA[JavaScript加载时间线创建Document对象，开始解析web页面。解析HTML元素和他们的文本内容后添加Element对象和Text节点到文档中。这个阶段 document.readyState = ‘loading’ 。遇到link外部css，创建线程加载，并继续解析文档。遇到script外部js，并且没有设置async、defer，浏览器加载，并阻塞，等待js加载完成并执行该脚本，然后继续解析文档。遇到script外部js，并且设置有async、defer，浏览器创建线程加载，并继续解析文档。 对于async属性的脚本，脚本加载完成后立即执行。（禁止使用document.write()）遇到img等，先正常解析dom结构，然后浏览器异步加载src，并继续解析文档。当文档解析完成，document.readyState = ‘interactive’ 。文档解析完成后，所有设置有defer的脚本会按照顺序执行。（禁止使用document.write()）;document对象触发DOMContentLoaded事件，这也标志着程序执行从同步脚本执行阶段，转化为事件驱动阶段。当所有async的脚本加载完成并执行后、img等加载完成后，document.readyState = ‘complete’，window对象触发load事件。从此，以异步响应方式处理用户输入、网络事件等。]]></content>
       <categories>
