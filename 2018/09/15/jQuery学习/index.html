@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="学习," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="同步：同时只能做一件事异步：操作与操作之间没有关系，可以同时进行多个操作 异步：会让代码变得更复杂同步：代码简单 例如淘宝网各个小版块数据读取,这种回调很繁琐1234567891011121314151617ajax(&amp;apos;/banner&amp;apos;,function(banner_data)&amp;#123;	ajax(&amp;apos;/hotitems&amp;apos;,function(banner_">
+<meta name="description" content="1 jQuery的优点1.1 jQuery的优点  轻量级：大小在30KB左右 强大的选择器：支持几乎所有的css选择器 出色的DOM操作的封装： 可靠的事件处理机制 完善的ajax 不污染顶级变量：只建立一个名为jQuery的对象，其所有的函数方法都在这个对象之下 出色的浏览器兼容性 链式操作方式 隐式迭代：当用jQuery找到带有”.myClass”类的全部元素，然后隐藏他们时，无需遍历每一个">
+<meta name="keywords" content="学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初学promise">
-<meta property="og:url" content="http://www.scuzb.com/2018/09/09/初学promise/index.html">
+<meta property="og:title" content="jQuery学习">
+<meta property="og:url" content="http://www.scuzb.com/2018/09/15/jQuery学习/index.html">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="同步：同时只能做一件事异步：操作与操作之间没有关系，可以同时进行多个操作 异步：会让代码变得更复杂同步：代码简单 例如淘宝网各个小版块数据读取,这种回调很繁琐1234567891011121314151617ajax(&amp;apos;/banner&amp;apos;,function(banner_data)&amp;#123;	ajax(&amp;apos;/hotitems&amp;apos;,function(banner_">
+<meta property="og:description" content="1 jQuery的优点1.1 jQuery的优点  轻量级：大小在30KB左右 强大的选择器：支持几乎所有的css选择器 出色的DOM操作的封装： 可靠的事件处理机制 完善的ajax 不污染顶级变量：只建立一个名为jQuery的对象，其所有的函数方法都在这个对象之下 出色的浏览器兼容性 链式操作方式 隐式迭代：当用jQuery找到带有”.myClass”类的全部元素，然后隐藏他们时，无需遍历每一个">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-13T12:05:55.570Z">
+<meta property="og:updated_time" content="2018-09-15T05:40:57.765Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初学promise">
-<meta name="twitter:description" content="同步：同时只能做一件事异步：操作与操作之间没有关系，可以同时进行多个操作 异步：会让代码变得更复杂同步：代码简单 例如淘宝网各个小版块数据读取,这种回调很繁琐1234567891011121314151617ajax(&amp;apos;/banner&amp;apos;,function(banner_data)&amp;#123;	ajax(&amp;apos;/hotitems&amp;apos;,function(banner_">
+<meta name="twitter:title" content="jQuery学习">
+<meta name="twitter:description" content="1 jQuery的优点1.1 jQuery的优点  轻量级：大小在30KB左右 强大的选择器：支持几乎所有的css选择器 出色的DOM操作的封装： 可靠的事件处理机制 完善的ajax 不污染顶级变量：只建立一个名为jQuery的对象，其所有的函数方法都在这个对象之下 出色的浏览器兼容性 链式操作方式 隐式迭代：当用jQuery找到带有”.myClass”类的全部元素，然后隐藏他们时，无需遍历每一个">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://www.scuzb.com/2018/09/09/初学promise/"/>
+  <link rel="canonical" href="http://www.scuzb.com/2018/09/15/jQuery学习/"/>
 
 
 
 
 
-  <title>初学promise | 博客</title>
+  <title>jQuery学习 | 博客</title>
   
 
 
@@ -287,7 +288,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.scuzb.com/2018/09/09/初学promise/">
+    <link itemprop="mainEntityOfPage" href="http://www.scuzb.com/2018/09/15/jQuery学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="且听风吟">
@@ -304,7 +305,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">初学promise</h1>
+          <h1 class="post-title" itemprop="name headline">jQuery学习</h1>
         
 
         <div class="post-meta">
@@ -316,8 +317,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-09T22:17:51+08:00">
-                2018-09-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-15T11:10:28+08:00">
+                2018-09-15
               </time>
             
 
@@ -357,8 +358,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/09/09/初学promise/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/09/初学promise/" itemprop="commentCount"></span>
+                <a href="/2018/09/15/jQuery学习/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/15/jQuery学习/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -385,7 +386,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  455
+                  1.8k
                 </span>
               
 
@@ -401,7 +402,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  7
                 </span>
               
             </div>
@@ -422,12 +423,46 @@
       
 
       
-        <p>同步：同时只能做一件事<br>异步：操作与操作之间没有关系，可以同时进行多个操作</p>
-<p>异步：会让代码变得更复杂<br>同步：代码简单</p>
-<p>例如淘宝网各个小版块数据读取,这种回调很繁琐<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">ajax(&apos;/banner&apos;,function(banner_data)&#123;</span><br><span class="line">	ajax(&apos;/hotitems&apos;,function(banner_data)&#123;</span><br><span class="line">		ajax(&apos;/siders&apos;,function(banner_data)&#123;</span><br><span class="line">			ajax(&apos;/siders&apos;,function(banner_data)&#123;</span><br><span class="line">	</span><br><span class="line">				&#125;,function()&#123;</span><br><span class="line">					alert(&apos;读取失败&apos;);</span><br><span class="line">				&#125;);</span><br><span class="line">		&#125;,function()&#123;</span><br><span class="line">			alert(&apos;读取失败&apos;);</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;,function()&#123;</span><br><span class="line">		alert(&apos;读取失败&apos;);</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;,function()&#123;</span><br><span class="line">	alert(&apos;读取失败&apos;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
-<p>同步:（假设有这种同步的ajax）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let banner_data=ajax_async(&apos;baners&apos;);</span><br><span class="line">let hotitems_data=ajax_async(&apos;hotitems&apos;);</span><br><span class="line">let banners_data=ajax_async(&apos;baners&apos;);</span><br><span class="line">let banners_data=ajax_async(&apos;baners&apos;);</span><br></pre></td></tr></table></figure></p>
-<p>promise：消除异步操作（同同步一样的方式，书写异步代码）<br>Promise.all    全部要成功<br>Promise.race 竞速，有一个成功就可以</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;Document&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;script src=&quot;jquery-3.3.1.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">	&lt;script&gt;</span><br><span class="line">		//resolve成功了，reject失败了</span><br><span class="line">		function createPromise(url)&#123;</span><br><span class="line">			return new Promise(function(resolve,reject)&#123;</span><br><span class="line">				$.ajax(&#123;</span><br><span class="line">					url,</span><br><span class="line">					dataType:&apos;json&apos;,</span><br><span class="line">					success(arr)&#123;</span><br><span class="line">						resolve(arr);</span><br><span class="line">					&#125;,</span><br><span class="line">					error(err)&#123;</span><br><span class="line">						reject(err);</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;);</span><br><span class="line">			&#125;);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		// p.then(function(arr)&#123;</span><br><span class="line">		// 	let [res1,res2]=arr;</span><br><span class="line">		// 	alert(&apos;成功了&apos;);</span><br><span class="line">		// &#125;,function()&#123;</span><br><span class="line">		// 	alert(&apos;失败了&apos;);</span><br><span class="line">		// &#125;)</span><br><span class="line"></span><br><span class="line">		Promise.all([</span><br><span class="line">				createPromise(&apos;arr.txt&apos;),</span><br><span class="line">				createPromise(&apos;json.txt&apos;)</span><br><span class="line">			]).then(function(arr)&#123;</span><br><span class="line">				let [res1,res2]=arr;</span><br><span class="line">				alert(&apos;全部都成功了&apos;);</span><br><span class="line">			&#125;,function()&#123;</span><br><span class="line">				alert(&apos;至少有一个失败了&apos;);</span><br><span class="line">			&#125;);</span><br><span class="line"></span><br><span class="line">		//jQuery自带promise,$.ajax(...)返回一个promise对象</span><br><span class="line">		Promise.all([</span><br><span class="line">			$.ajax(&#123;url:&apos;arr.txt&apos;,dataType:&apos;json&apos;&#125;),</span><br><span class="line">			$.ajax(&#123;url:&apos;json.txt&apos;,dataType:&apos;json&apos;&#125;),</span><br><span class="line">		]).then(function(results)&#123;</span><br><span class="line">			let [arr,json]=results;</span><br><span class="line">			alert(&apos;成功了&apos;);</span><br><span class="line">			console.log(arr,json);</span><br><span class="line">		&#125;,function()&#123;</span><br><span class="line">			alert(&apos;失败了&apos;);</span><br><span class="line">		&#125;);</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+        <h1 id="1-jQuery的优点"><a href="#1-jQuery的优点" class="headerlink" title="1 jQuery的优点"></a>1 jQuery的优点</h1><h2 id="1-1-jQuery的优点"><a href="#1-1-jQuery的优点" class="headerlink" title="1.1 jQuery的优点"></a>1.1 jQuery的优点</h2><blockquote>
+<ul>
+<li>轻量级：大小在30KB左右</li>
+<li>强大的选择器：支持几乎所有的css选择器</li>
+<li>出色的DOM操作的封装：</li>
+<li>可靠的事件处理机制</li>
+<li>完善的ajax</li>
+<li>不污染顶级变量：只建立一个名为jQuery的对象，其所有的函数方法都在这个对象之下</li>
+<li>出色的浏览器兼容性</li>
+<li>链式操作方式</li>
+<li>隐式迭代：当用jQuery找到带有”.myClass”类的全部元素，然后隐藏他们时，无需遍历每一个返回的元素。相反，jQuery里的方法都被设计成自动操作对象的集合，而不是单独的对象，这使得大量的循环结构变得不再必要，从而大幅的减少了代码量。</li>
+<li>丰富的插件支持、完善的文档、开源</li>
+</ul>
+</blockquote>
+<h2 id="1-2导航栏"><a href="#1-2导航栏" class="headerlink" title="1.2导航栏"></a>1.2导航栏</h2><p>$(document).ready()网页中所有的dom元素都加载完毕后执行，可能dom相关联的东西并没有加载完，能同时编写多个<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;box&quot;&gt;</span><br><span class="line">	&lt;ul class=&quot;menu&quot;&gt;</span><br><span class="line">		&lt;li class=&quot;level1&quot;&gt;</span><br><span class="line">			&lt;a href=&quot;#none&quot;&gt;衬衫&lt;/a&gt;</span><br><span class="line">			&lt;ul&gt;</span><br><span class="line">				&lt;li&gt;&lt;a href=&quot;#none&quot;&gt;短袖衬衫&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;&lt;a href=&quot;#none&quot;&gt;短袖衬衫&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;&lt;a href=&quot;#none&quot;&gt;短袖衬衫&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;&lt;a href=&quot;#none&quot;&gt;短袖衬衫&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">			&lt;/ul&gt;</span><br><span class="line">		&lt;/li&gt;&lt;li class=&quot;level1&quot;&gt;</span><br><span class="line">			&lt;a href=&quot;#none&quot;&gt;衬衫&lt;/a&gt;</span><br><span class="line">			&lt;ul&gt;</span><br><span class="line">				&lt;li&gt;&lt;a href=&quot;#none&quot;&gt;短袖衬衫&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;&lt;a href=&quot;#none&quot;&gt;短袖衬衫&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;&lt;a href=&quot;#none&quot;&gt;短袖衬衫&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;&lt;a href=&quot;#none&quot;&gt;短袖衬衫&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">			&lt;/ul&gt;</span><br><span class="line">		&lt;/li&gt;&lt;li class=&quot;level1&quot;&gt;</span><br><span class="line">			&lt;a href=&quot;#none&quot;&gt;衬衫&lt;/a&gt;</span><br><span class="line">			&lt;ul&gt;</span><br><span class="line">				&lt;li&gt;&lt;a href=&quot;#none&quot;&gt;短袖衬衫&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;&lt;a href=&quot;#none&quot;&gt;短袖衬衫&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;&lt;a href=&quot;#none&quot;&gt;短袖衬衫&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;&lt;a href=&quot;#none&quot;&gt;短袖衬衫&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">			&lt;/ul&gt;</span><br><span class="line">		&lt;/li&gt;</span><br><span class="line">	&lt;/ul&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	$(&quot;.level1&gt;a&quot;).click(function)&#123;</span><br><span class="line">		$(this).addClass(&quot;current&quot;)</span><br><span class="line">		.next().show();</span><br><span class="line">		.parent.siblings().children(&apos;a&apos;).removeClass(&apos;current&apos;);</span><br><span class="line">		.next().hide();</span><br><span class="line">		return false;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="1-3-DOM对象和jQuery对象"><a href="#1-3-DOM对象和jQuery对象" class="headerlink" title="1.3 DOM对象和jQuery对象"></a>1.3 DOM对象和jQuery对象</h2><p>在jQuery对象中无法使用dom对象的任何方法<br>jQuery对象写法：var $variable= jQuery 对象<br>DOM对象写法：var variable= DOM对象<br>    jQuery对象是一个类似数组的对象，有两种方法可以将jQuery对象转换成dom对象，即[index]和get[index]<br>    var $cr=$(“#cr”);<br>    var cr=$cr[0];<br>    var cr=$cr.get(0);</p>
+<pre><code>dom对象转成jQuery对象
+只需要用$()把dom对象包装起来
+var cr=document.getElementById(&quot;cr&quot;);
+var $cr=$(cr);
+$()函数就是一个jQuery对象的制造工厂
+</code></pre><p>jQuery库中，几乎所有的插件都被限制在它的命名空间里。通常，全局对象都被很好的存储在jQuery命名空间里。</p>
+<h1 id="2-jQuery选择器"><a href="#2-jQuery选择器" class="headerlink" title="2 jQuery选择器"></a>2 jQuery选择器</h1><h2 id="2-1-jQuery选择器的优势"><a href="#2-1-jQuery选择器的优势" class="headerlink" title="2.1 jQuery选择器的优势"></a>2.1 jQuery选择器的优势</h2><p>简洁的写法<br>支持CSS1到CSS3选择器<br>完善的处理机制<br>$(‘#tt’).css(“color”,”red”);//这里无需判断$(‘#tt’)是否存在<br>$(‘#tt’)获取的永远是对象，即使网页上没有此元素<br>要用jQuery检查某元素是否在网页上存在，需要获取元素的长度来判断，或者转换成dom对象来判断</p>
+<h2 id="2-2-jQuery选择器"><a href="#2-2-jQuery选择器" class="headerlink" title="2.2 jQuery选择器"></a>2.2 jQuery选择器</h2><h3 id="2-2-1-基本选择器"><a href="#2-2-1-基本选择器" class="headerlink" title="2.2.1 基本选择器"></a>2.2.1 基本选择器</h3><p> #id<br>.class<br>element<br>*<br>div,span,p.myClass</p>
+<h3 id="2-2-2-层次选择器"><a href="#2-2-2-层次选择器" class="headerlink" title="2.2.2 层次选择器"></a>2.2.2 层次选择器</h3><p>div span //所有子元素<br>div&gt;span //直接子元素<br>.one+div //class为one的下一个div同辈元素<br>pre~siblings //选取pre之后的所有siblings元素</p>
+<h3 id="2-2-3-过滤选择器"><a href="#2-2-3-过滤选择器" class="headerlink" title="2.2.3 过滤选择器"></a>2.2.3 过滤选择器</h3><p>:first<br>div:last //选取div元素中，最后一个div元素<br>input:not(.myClass) //选取class不是myClass的input元素<br>:even<br>:odd<br>input:eq(index) //选取索引值等于index的input元素<br>:gt(index) //选取索引值大于index的input元素<br>:animated<br>:focus<br>内容过滤选择器<br>:contains(text)<br>:empty //选取不含子元素或者文本的空元素<br>:has(selector)<br>:parent //选取含有子元素或者文本的元素<br>可见性过滤选择器<br>:hidden<br>:visible<br>[attribute=value]</p>
+<p>jQuery的ajax返回值是什么？<br>很多公司，尤其是金融或数据分析的公司，他们的web app会与服务端进行大量的数据交互，所以他们的面试官通常会很看重面试者对于网络请求以及异步编程的理解程度。<br>jQuery中的ajax大家很常用，以至于绝大部分人把他认为是“理所应当”，而忽略了他的底层逻辑和实现原理。$.ajax()方法返回的是一个延迟对象，即$.Deferred的实例。<br>所以你可以像下面这样使用$.ajax()方法<br>//利用done()和fail()方法来处理ajax请求$.ajax({<br>    url:”<a href="http://mydomain.com/memberInfo/get&quot;" target="_blank" rel="noopener">http://mydomain.com/memberInfo/get&quot;</a>,<br>    async: false}).done(responseData =&gt; {<br>    console.log(responseData)}).fail(()=&gt;{<br>    console.error(‘出错了！’)})<br>//$.get()也是同样的道理，除了上面延迟对象提供的方法外，还可以使用then()回调$.get(“<a href="http://mydomain.com/memberInfo/get&quot;" target="_blank" rel="noopener">http://mydomain.com/memberInfo/get&quot;</a>)<br>    .then(responseData =&gt; {<br>        console.log(responseData);<br>    })<br>如果你想让这两个请求都完成后再进行处理的话，可以用下面的操作：<br>var memberDef = $.get(“<a href="http://mydomain.com/memberInfo/get&quot;);var" target="_blank" rel="noopener">http://mydomain.com/memberInfo/get&quot;);var</a> orderDef = $.get(“<a href="http://mydomain.com/orderInfo/get&quot;);$.when" target="_blank" rel="noopener">http://mydomain.com/orderInfo/get&quot;);$.when</a>(memberDef, orderDef).then(([memberInfo], [orderInfo])=&gt;{<br>    //这里用到了解构赋值来取得http返回的数据<br>    console.log(‘用户信息’,memberInfo);<br>    console.log(‘订单信息’,orderInfo);})<br>想要了解更多关于延迟对象的内容，可以访问阮一峰的博客<br>除了上面这一个问题，还可以追问一些下面的问题，这里就不展开解答了：<br>异步请求和同步请求的区别<br>ajax 请求有几种数据格式，如何设置数据格式<br>如何避免浏览器缓存get请求，以便达到每次get请求都能获取最新的数据<br>等等……</p>
+<p>jquery和jquery.fn（有什么区别，方法是写在哪里的）<br>ajax在jquery底层如何实现<br>0: 未打开, open()方法未调用。<br>1: 未发送, send()方法未调用。<br>2: 已获取响应头, send()方法已被调用，响应头和响应状态已经返回。<br>3: 正在下载响应体, responseText已经获取了部分数据。<br>4: 请求完成，整个请求过程结束了。</p>
+<p>fn 是什么东西呢。查看jQuery代码，就不难发现。</p>
+<p>jQuery.fn = jQuery.prototype = {</p>
+<p>　　　init: function( selector, context ) {//….　</p>
+<p>　　　//……</p>
+<p>};</p>
+<p>原来 jQuery.fn = jQuery.prototype.对prototype肯定不会陌生啦。</p>
+<p>虽然 javascript　没有明确的类的概念，但是用类来理解它，会更方便。</p>
+<p>jQuery便是一个封装得非常好的类，比如我们用 语句　$(“#btn1″) 会生成一个 jQuery类的实例。</p>
+<p>jQuery.extend(object);　为jQuery类添加添加类方法，可以理解为添加静态方法。如：<br>$.extend({<br>　　add:function(a,b){return a+b;}<br>});<br>便为　jQuery　添加一个为 add　的　“静态方法”，之后便可以在引入 jQuery　的地方，使用这个方法了，</p>
+<p>$.add(3,4);  //return 7</p>
+<p>jQuery.fn.extend(object); 对jQuery.prototype进得扩展，就是为jQuery类添加“成员函数”。jQuery类的实例可以使用这个“成员函数”。</p>
+
       
     </div>
     
@@ -442,6 +477,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/学习/" rel="tag"># 学习</a>
+          
+        </div>
+      
 
       
       
@@ -451,8 +492,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/06/vue初学之创建点赞组件/" rel="next" title="vue初学之创建点赞组件">
-                <i class="fa fa-chevron-left"></i> vue初学之创建点赞组件
+              <a href="/2018/09/12/ajax在jQuery中的实现/" rel="next" title="ajax在jQuery中的实现">
+                <i class="fa fa-chevron-left"></i> ajax在jQuery中的实现
               </a>
             
           </div>
@@ -460,10 +501,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/11/ES6学习/" rel="prev" title="ES6学习">
-                ES6学习 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -518,8 +555,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -593,6 +639,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-jQuery的优点"><span class="nav-number">1.</span> <span class="nav-text">1 jQuery的优点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-jQuery的优点"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 jQuery的优点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2导航栏"><span class="nav-number">1.2.</span> <span class="nav-text">1.2导航栏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-DOM对象和jQuery对象"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 DOM对象和jQuery对象</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-jQuery选择器"><span class="nav-number">2.</span> <span class="nav-text">2 jQuery选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-jQuery选择器的优势"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 jQuery选择器的优势</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-jQuery选择器"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 jQuery选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1-基本选择器"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.2.1 基本选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2-层次选择器"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.2.2 层次选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-3-过滤选择器"><span class="nav-number">2.2.3.</span> <span class="nav-text">2.2.3 过滤选择器</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
