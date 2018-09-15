@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="学习," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="博客">
-<meta property="og:url" content="http://www.scuzb.com/archives/2018/index.html">
+<meta name="description" content="AJAX在jquery底层如何实现12345678910$.ajax(&amp;#123;    &amp;quot;url&amp;quot;:&amp;quot;&amp;quot;,   //访问路径    &amp;quot;data&amp;quot;:&amp;quot;&amp;quot;,  // 需要传输的数据    &amp;quot;type&amp;quot;:&amp;quot;&amp;quot;,  // 请求方式    &amp;quot;dataType&amp;quot;:&amp;qu">
+<meta name="keywords" content="学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AJAX学习小结">
+<meta property="og:url" content="http://www.scuzb.com/2018/09/15/AJAX学习小结/index.html">
 <meta property="og:site_name" content="博客">
+<meta property="og:description" content="AJAX在jquery底层如何实现12345678910$.ajax(&amp;#123;    &amp;quot;url&amp;quot;:&amp;quot;&amp;quot;,   //访问路径    &amp;quot;data&amp;quot;:&amp;quot;&amp;quot;,  // 需要传输的数据    &amp;quot;type&amp;quot;:&amp;quot;&amp;quot;,  // 请求方式    &amp;quot;dataType&amp;quot;:&amp;qu">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-09-15T13:24:06.774Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客">
+<meta name="twitter:title" content="AJAX学习小结">
+<meta name="twitter:description" content="AJAX在jquery底层如何实现12345678910$.ajax(&amp;#123;    &amp;quot;url&amp;quot;:&amp;quot;&amp;quot;,   //访问路径    &amp;quot;data&amp;quot;:&amp;quot;&amp;quot;,  // 需要传输的数据    &amp;quot;type&amp;quot;:&amp;quot;&amp;quot;,  // 请求方式    &amp;quot;dataType&amp;quot;:&amp;qu">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://www.scuzb.com/archives/2018/"/>
+  <link rel="canonical" href="http://www.scuzb.com/2018/09/15/AJAX学习小结/"/>
 
 
 
 
 
-  <title>归档 | 博客</title>
+  <title>AJAX学习小结 | 博客</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-right page-archive">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/cyrus520" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>
 
@@ -269,411 +274,227 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.scuzb.com/2018/09/15/AJAX学习小结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="且听风吟">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">AJAX学习小结</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-15T18:35:30+08:00">
+                2018-09-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 11 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/EMCAscript/" itemprop="url" rel="index">
+                    <span itemprop="name">EMCAscript</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
 
-        
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/09/15/AJAX学习小结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/15/AJAX学习小结/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/15/Promise学习小结/" itemprop="url">
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读量<i class="fa fa-file-o"> </i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
               
-                <span itemprop="name">Promise学习小结</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  847
+                </span>
               
-            </a>
-        
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-15T22:06:43+08:00"
-              content="2018-09-15" >
-          09-15
-        </time>
-      </div>
+              
+                <span class="post-meta-divider">|</span>
+              
 
-    </header>
-  </article>
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
 
+          
 
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/15/JavaScript异步与回调函数/" itemprop="url">
-              
-                <span itemprop="name">JavaScript异步与回调函数</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-15T21:33:13+08:00"
-              content="2018-09-15" >
-          09-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/15/AJAX学习小结/" itemprop="url">
-              
-                <span itemprop="name">AJAX学习小结</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-15T18:35:30+08:00"
-              content="2018-09-15" >
-          09-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h1 id="AJAX在jquery底层如何实现"><a href="#AJAX在jquery底层如何实现" class="headerlink" title="AJAX在jquery底层如何实现"></a>AJAX在jquery底层如何实现</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">    &quot;url&quot;:&quot;&quot;,   //访问路径</span><br><span class="line">    &quot;data&quot;:&quot;&quot;,  // 需要传输的数据</span><br><span class="line">    &quot;type&quot;:&quot;&quot;,  // 请求方式</span><br><span class="line">    &quot;dataType&quot;:&quot;&quot;,  // 返回值类型</span><br><span class="line">    &quot;success&quot;:function(obj)&#123;&#125;,      // 响应成功时的回调函数</span><br><span class="line">    &quot;error&quot;:function(obj)&#123;&#125;     // 响应失败时的回调函数</span><br><span class="line">&#125;);</span><br><span class="line">$.get(URL,callback);</span><br><span class="line">$.post(URL,data,callback);</span><br></pre></td></tr></table></figure>
+<h1 id="用原生JS实现一个接口，能够用Ajax上传文件并显示上传进度，上传完成后接收一个来自服务器的json数据"><a href="#用原生JS实现一个接口，能够用Ajax上传文件并显示上传进度，上传完成后接收一个来自服务器的json数据" class="headerlink" title="用原生JS实现一个接口，能够用Ajax上传文件并显示上传进度，上传完成后接收一个来自服务器的json数据"></a>用原生JS实现一个接口，能够用Ajax上传文件并显示上传进度，上传完成后接收一个来自服务器的json数据</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">var xhr = new XMLHttpRequest();</span><br><span class="line">    xhr.open(&apos;POST&apos;, &apos;url&apos;);</span><br><span class="line">    // 上传完成后的回调函数</span><br><span class="line">    xhr.onreadystatechange = function() &#123;</span><br><span class="line">        if (xhr.status === 200) &#123;　　</span><br><span class="line">            console.log(xhr.responseText);</span><br><span class="line">        &#125; else &#123;　</span><br><span class="line">            console.log(&apos;上传出错&apos;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    // 获取上传进度</span><br><span class="line">    xhr.upload.onprogress = function(event) &#123;</span><br><span class="line">        console.log(event.loaded)</span><br><span class="line">        console.log(event.total)</span><br><span class="line">        if (event.lengthComputable) &#123;</span><br><span class="line">            var percent = Math.floor(event.loaded / event.total * 100);</span><br><span class="line">            document.querySelector(&quot;#progress .progress-item&quot;).style.width = percent + &quot;%&quot;;</span><br><span class="line">            // 设置进度显示</span><br><span class="line">            console.log(percent)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    xhr.send(fd);</span><br></pre></td></tr></table></figure>
+<h1 id="请简述-AJAX-及基本步骤？"><a href="#请简述-AJAX-及基本步骤？" class="headerlink" title="请简述 AJAX 及基本步骤？"></a>请简述 AJAX 及基本步骤？</h1><p>简述 AJAX：AJAX即“Asynchronous Javascript And XML”（异步 JavaScript 和 XML），是指一种创建交互式网页应用的网页开发技术。通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。</p>
+<h1 id="Ajax应用场景"><a href="#Ajax应用场景" class="headerlink" title="Ajax应用场景"></a>Ajax应用场景</h1><p>Ajax的特点在于异步交互，动态更新web页面，因此它的适用范围是交互较多，频繁读取数据的web应用。<br>场景1. 用Ajax进行数据验证<br>场景2.按需取数据<br>场景3.自动更新页面</p>
+<h1 id="AJAX的优点"><a href="#AJAX的优点" class="headerlink" title="AJAX的优点"></a>AJAX的优点</h1><ol>
+<li>通过异步模式，提升了用户体验</li>
+<li>优化了浏览器和服务器之间的传输，减少不必要的数据往返，减少了带宽占用</li>
+<li>Ajax在客户端运行，承担了一部分本来由服务器承担的工作，减少了大用户量下的服务器负载。<h1 id="AJAX的缺点"><a href="#AJAX的缺点" class="headerlink" title="AJAX的缺点"></a>AJAX的缺点</h1>1.ajax不支持浏览器back按钮。<br>2.安全问题 AJAX暴露了与服务器交互的细节。<br>3.对搜索引擎的支持比较弱。<br>4.破坏了程序的异常机制。<br>5.不容易调试。<br>6.跨域请求有一定限制。解决方式：jsonp。<h1 id="readyState属性状态"><a href="#readyState属性状态" class="headerlink" title="readyState属性状态"></a>readyState属性状态</h1>有5个可取值： 0=未初始化 ，1=正在加载 2=已加载，3=交互中，4=完成<h1 id="AJAX请求中，readyStatus的状态有哪些"><a href="#AJAX请求中，readyStatus的状态有哪些" class="headerlink" title="AJAX请求中，readyStatus的状态有哪些"></a>AJAX请求中，readyStatus的状态有哪些</h1>0: 未打开, open()方法未调用。<br>1: 未发送, send()方法未调用。<br>2: 已获取响应头, send()方法已被调用，响应头和响应状态已经返回。<br>3: 正在下载响应体, responseText已经获取了部分数据。<br>4: 请求完成，整个请求过程结束了。<h1 id="AJAX-基本步骤："><a href="#AJAX-基本步骤：" class="headerlink" title="AJAX 基本步骤："></a>AJAX 基本步骤：</h1>//初始化ajax对象<br>var xhr = new XMLHttpRequest();<br>//连接地址，准备数据<br>xhr.open(“方式”,”地址”,是否为异步);<br>//接收数据完成触发的事件<br>xhr.onload =function(){}<br>//发送数据<br>xhr.send();<h1 id="AJAX的交互模型"><a href="#AJAX的交互模型" class="headerlink" title="AJAX的交互模型"></a>AJAX的交互模型</h1>ajax的工作原理相当于在用户和服务器之间加了一个中间层，使用户操作与服务器响应异步化。它在客户端创建Ajax引擎，把传统方式下的一些服务器担负的工作转移到客户端，便于客户端资源来出来，减轻服务器和带宽的负担。</li>
+</ol>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/15/jQuery学习/" itemprop="url">
-              
-                <span itemprop="name">jQuery学习</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-15T11:10:28+08:00"
-              content="2018-09-15" >
-          09-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/12/AJAX在jQuery中的实现/" itemprop="url">
-              
-                <span itemprop="name">ajax在jQuery中的实现</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-12T22:54:45+08:00"
-              content="2018-09-12" >
-          09-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/11/ES6学习/" itemprop="url">
-              
-                <span itemprop="name">ES6学习</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-11T22:23:45+08:00"
-              content="2018-09-11" >
-          09-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/09/初学promise/" itemprop="url">
-              
-                <span itemprop="name">初学promise</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-09T22:17:51+08:00"
-              content="2018-09-09" >
-          09-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/06/vue初学之创建点赞组件/" itemprop="url">
-              
-                <span itemprop="name">vue初学之创建点赞组件</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-06T23:00:12+08:00"
-              content="2018-09-06" >
-          09-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/06/sublime快捷方式/" itemprop="url">
-              
-                <span itemprop="name">sublime快捷方式</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-06T22:23:45+08:00"
-              content="2018-09-06" >
-          09-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/05/JavaScript加载时间线/" itemprop="url">
-              
-                <span itemprop="name">JavaScript加载时间线</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-05T15:02:35+08:00"
-              content="2018-09-05" >
-          09-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/学习/" rel="tag"># 学习</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/15/jQuery学习/" rel="next" title="jQuery学习">
+                <i class="fa fa-chevron-left"></i> jQuery学习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/15/JavaScript异步与回调函数/" rel="prev" title="JavaScript异步与回调函数">
+                JavaScript异步与回调函数 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2018/page/2/">2</a><a class="extend next" rel="next" href="/archives/2018/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -681,6 +502,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -701,8 +529,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -776,6 +613,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#AJAX在jquery底层如何实现"><span class="nav-number">1.</span> <span class="nav-text">AJAX在jquery底层如何实现</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用原生JS实现一个接口，能够用Ajax上传文件并显示上传进度，上传完成后接收一个来自服务器的json数据"><span class="nav-number">2.</span> <span class="nav-text">用原生JS实现一个接口，能够用Ajax上传文件并显示上传进度，上传完成后接收一个来自服务器的json数据</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#请简述-AJAX-及基本步骤？"><span class="nav-number">3.</span> <span class="nav-text">请简述 AJAX 及基本步骤？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Ajax应用场景"><span class="nav-number">4.</span> <span class="nav-text">Ajax应用场景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#AJAX的优点"><span class="nav-number">5.</span> <span class="nav-text">AJAX的优点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#AJAX的缺点"><span class="nav-number">6.</span> <span class="nav-text">AJAX的缺点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#readyState属性状态"><span class="nav-number">7.</span> <span class="nav-text">readyState属性状态</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#AJAX请求中，readyStatus的状态有哪些"><span class="nav-number">8.</span> <span class="nav-text">AJAX请求中，readyStatus的状态有哪些</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#AJAX-基本步骤："><span class="nav-number">9.</span> <span class="nav-text">AJAX 基本步骤：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#AJAX的交互模型"><span class="nav-number">10.</span> <span class="nav-text">AJAX的交互模型</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -925,6 +778,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
