@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="学习," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -79,18 +79,14 @@
 
 
 
-<meta name="description" content="用promise手写ajax123456789101112131415161718192021222324// ajax函数将返回Promise对象:function ajax(method, url, data) &amp;#123;    var request = new XMLHttpRequest();    return new Promise(function (resolve, rejec">
-<meta name="keywords" content="学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Promise学习小结">
-<meta property="og:url" content="http://www.scuzb.com/2018/09/15/Promise学习小结/index.html">
+<meta property="og:title" content="作用域与作用域链">
+<meta property="og:url" content="http://www.scuzb.com/2018/09/16/作用域与作用域链/index.html">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="用promise手写ajax123456789101112131415161718192021222324// ajax函数将返回Promise对象:function ajax(method, url, data) &amp;#123;    var request = new XMLHttpRequest();    return new Promise(function (resolve, rejec">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-15T14:14:10.041Z">
+<meta property="og:updated_time" content="2018-09-16T09:13:56.065Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Promise学习小结">
-<meta name="twitter:description" content="用promise手写ajax123456789101112131415161718192021222324// ajax函数将返回Promise对象:function ajax(method, url, data) &amp;#123;    var request = new XMLHttpRequest();    return new Promise(function (resolve, rejec">
+<meta name="twitter:title" content="作用域与作用域链">
 
 
 
@@ -120,13 +116,13 @@
 
 
 
-  <link rel="canonical" href="http://www.scuzb.com/2018/09/15/Promise学习小结/"/>
+  <link rel="canonical" href="http://www.scuzb.com/2018/09/16/作用域与作用域链/"/>
 
 
 
 
 
-  <title>Promise学习小结 | 博客</title>
+  <title>作用域与作用域链 | 博客</title>
   
 
 
@@ -288,7 +284,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.scuzb.com/2018/09/15/Promise学习小结/">
+    <link itemprop="mainEntityOfPage" href="http://www.scuzb.com/2018/09/16/作用域与作用域链/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="且听风吟">
@@ -305,7 +301,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Promise学习小结</h1>
+          <h1 class="post-title" itemprop="name headline">作用域与作用域链</h1>
         
 
         <div class="post-meta">
@@ -317,8 +313,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-15T22:06:43+08:00">
-                2018-09-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-16T17:13:56+08:00">
+                2018-09-16
               </time>
             
 
@@ -328,28 +324,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/EMCAscript/" itemprop="url" rel="index">
-                    <span itemprop="name">EMCAscript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -358,8 +332,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/09/15/Promise学习小结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/15/Promise学习小结/" itemprop="commentCount"></span>
+                <a href="/2018/09/16/作用域与作用域链/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/16/作用域与作用域链/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -386,7 +360,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.6k
+                  0
                 </span>
               
 
@@ -402,7 +376,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  1
                 </span>
               
             </div>
@@ -423,10 +397,7 @@
       
 
       
-        <p>用promise手写ajax<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">// ajax函数将返回Promise对象:</span><br><span class="line">function ajax(method, url, data) &#123;</span><br><span class="line">    var request = new XMLHttpRequest();</span><br><span class="line">    return new Promise(function (resolve, reject) &#123;</span><br><span class="line">        request.onreadystatechange = function () &#123;</span><br><span class="line">            if (request.readyState === 4) &#123;</span><br><span class="line">                if (request.status === 200) &#123;</span><br><span class="line">                    resolve(request.responseText);</span><br><span class="line">                &#125; else &#123;</span><br><span class="line">                    reject(request.status);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        request.open(method, url);</span><br><span class="line">        request.send(data);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line">var log = document.getElementById(&apos;test-promise-ajax-result&apos;);</span><br><span class="line">var p = ajax(&apos;GET&apos;, &apos;/api/categories&apos;);</span><br><span class="line">p.then(function (text) &#123; // 如果AJAX成功，获得响应内容</span><br><span class="line">    log.innerText = text;</span><br><span class="line">&#125;).catch(function (status) &#123; // 如果AJAX失败，获得响应代码</span><br><span class="line">    log.innerText = &apos;ERROR: &apos; + status;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
-<h1 id="什么是Promise？"><a href="#什么是Promise？" class="headerlink" title="什么是Promise？"></a>什么是Promise？</h1><p>下面的回答很像在背概念，但是很精辟<br>所谓Promise，简单说就是一个容器，里面保存着某个未来才会结束的事件的结果。从语法上说，Promise 是一个对象，从它可以获取异步操作的消息。Promise 提供统一的 API，各种异步操作都可以用同样的方法进行处理，让开发者不用再关注于时序和底层的结果。Promise的状态具有不受外界影响和不可逆两个特点。<br>传统的回调式异步操作有什么缺点？（Promise是如何解决异步操作）<br>传统的回调有五大信任问题：<br>调用回调过早<br>调用回调过晚（或没有被调用）<br>调用回调次数过少或过多<br>未能传递所需的环境和参数<br>吞掉可能出现的错误和异常</p>
-<h1 id="Promise的解决办法："><a href="#Promise的解决办法：" class="headerlink" title="Promise的解决办法："></a>Promise的解决办法：</h1><p>1.调用回调过早<br>对于Promise来说，即使是立即完成的Promise也无法被同步观察到，也就是说一个Promise调用then()的时候，即使这个Promise已经决议了，提供给then的回调也总会被异步调用。<br>2.调用回调过晚（或没有被调用）<br>对于一个Promise对象注册的每一个观察回调都是相对独立、互不干预的。而Promise对象调用resolve()和reject()时，每个注册的观察回调也都会被自动调度。所以这些观察回调的任意一个都无法影响或延误对其他回调的调用。<br>此外，关于回调未调用。正常情况下，没有任何东西可以阻止Promise向你通知它的决议，即使你的JavaScript代码报错了，一会通过异常回调来捕获到。如果Promise永远不被决议的话，Promise本身已提供了竞态的抽象机制来作为解决方案。<br>3.调用回调次数过少或过多<br>Promise的定义方式使得它只能被决议一次。即使代码中出现多次决议，这个Promise也会接受第一次决议，并会忽略掉其他任何后续调用。所以任何通过then()注册的回调只会被调用一次。<br>4.未能传递所需的环境和参数<br>凡是被决议的值都会传递到观察回调中，如果没有显示的决议值也会传递一个undefined给观察回调。需要注意的是，Promise只允许传一个决议值，其他值将会被默默忽略掉。<br>5.吞掉可能出现的错误和异常<br>如果在创建Promise时，存在JavaScript代码错误，会直接导致该Promise的拒绝决议，那么你可以通过reject()来捕获异常，代码中的任何异常都不会吞掉。<br>以上的回答十分的啰嗦，但是如果上面的五点你都能记住的话，你会了解很多关于Promise的细节问题，也会应对一些面试官的追问，如Promise的then()会不会被重复调用 等。<br>Promise中的异步模式有哪些？有什么区别？<br>好吧，这个问题可能会把面试者问懵……可以考虑另一种问法，或者直接进入下一个问题，说一说Promise.all()和Promise.race()的区别。因为ES6中的Promise中只有这两个模式all和race，其他的如first、any、last等都是其他Promise库提供的。<br>回到问题本身，Promise.all()和Promise.race()的区别<br>all会将传入的数组中的所有promise全部决议以后，将决议值以数组的形式传入到观察回调中，任何一个promise决议为拒绝，那么就会调用拒绝回调。<br>race会将传入的数组中的所有promise中第一个决议的决议值传递给观察回调，即使决议结果是拒绝。<br>如果向Promise.all()和Promise.race()传递空数组，运行结果会有什么不同？<br>all会立即决议，决议结果是fullfilled，值是undefined<br>race会永远都不决议，程序卡死……<br>如何确保一个变量是可信任的Promise（Promise.resolve方法传入不同值的不同处理有哪些）<br>可以通过Promise.resolve()方法对不确定的值进行Promise化，返回一个Promise对象。<br>如果是一个立即值，如一个普通变量，那么该Promise会立即决议为成功。<br>如果是一个Promise值，那么会将该Promise直接返回赋值给这个Promise，不会有额外开销。<br>如果是一个类Promise值， 比如其中含有名称为then的成员变量，那么会将then展开形成一个新的Promise对象。<br>Promise是如何捕获异常的？与传统的try/catch相比有什么优势？<br>传统的try/catch捕获异常方式是无法捕获异步的异常的，代码如下：<br>try {<br>    setTimeout(function(){<br>        undefined();        //undefined不是一个方法，会抛出异常<br>    }, 500)} catch(err){<br>    //这里并不能捕获异常<br>    console.log(err);}<br>而对于Promise对象来说，构造Promise实例时的代码如果出错，则会被认为是一个拒绝的决议，并会向观察回调中传递异常信息。所以即使是一个异步的请求，Promise也是可以捕获异常的。此外，Promise还可以通过catch回调来捕获回调中的异常。<br>Promise是一个不错异步操作解决方案，他解决了传统的通过回调和事件来解决异步操作的诸多问题，如“竞争”，回调信任度低的问题。ES6中也提供了标准的Promise供大家使用。<br>如何解决异步回调地狱<br>promise、generator、async/await<br>有三个函数，内部实现都是异步的，怎么让这三个函数变成一个同步的，以节省时间<br>promise.all<br>Promise状态<br>一个promise可能有三种状态：等待（pending）、已完成（fulfilled）、已拒绝（rejected）。</p>
-
+        
       
     </div>
     
@@ -441,12 +412,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/学习/" rel="tag"># 学习</a>
-          
-        </div>
-      
 
       
       
@@ -456,8 +421,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/15/JavaScript异步与回调函数/" rel="next" title="JavaScript异步与回调函数">
-                <i class="fa fa-chevron-left"></i> JavaScript异步与回调函数
+              <a href="/2018/09/16/跨域知识小结/" rel="next" title="跨域知识小结">
+                <i class="fa fa-chevron-left"></i> 跨域知识小结
               </a>
             
           </div>
@@ -465,10 +430,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/16/跨域知识小结/" rel="prev" title="跨域知识小结">
-                跨域知识小结 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -523,17 +484,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -607,22 +559,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是Promise？"><span class="nav-number">1.</span> <span class="nav-text">什么是Promise？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Promise的解决办法："><span class="nav-number">2.</span> <span class="nav-text">Promise的解决办法：</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
