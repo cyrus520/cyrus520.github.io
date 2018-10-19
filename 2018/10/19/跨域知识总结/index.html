@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="学习," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -79,18 +79,17 @@
 
 
 
-<meta name="description" content="用promise手写ajax123456789101112131415161718192021222324// ajax函数将返回Promise对象:function ajax(method, url, data) &amp;#123;    var request = new XMLHttpRequest();    return new Promise(function (resolve, rejec">
-<meta name="keywords" content="学习">
+<meta name="description" content="什么情况算是跨域？同ip（或domin），同端口，同协议视为同一个域，一个域内的脚本仅仅具有本域内的权限，可以理解为本域脚本只能读写本域内的资源，而无法访问其它域的资源。这种安全限制称为同源策略。现代浏览器在安全性和可用性之间选择了一个平衡点。在遵循同源策略的基础上，选择性地为同源策略开放了后门。例如img，script，style等标签，都允许跨域引用资源，然而，也只能是引用这些资源而已，并不能">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Promise学习小结">
-<meta property="og:url" content="http://www.scuzb.com/2018/09/15/Promise学习小结/index.html">
+<meta property="og:title" content="跨域知识总结">
+<meta property="og:url" content="http://www.scuzb.com/2018/10/19/跨域知识总结/index.html">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="用promise手写ajax123456789101112131415161718192021222324// ajax函数将返回Promise对象:function ajax(method, url, data) &amp;#123;    var request = new XMLHttpRequest();    return new Promise(function (resolve, rejec">
+<meta property="og:description" content="什么情况算是跨域？同ip（或domin），同端口，同协议视为同一个域，一个域内的脚本仅仅具有本域内的权限，可以理解为本域脚本只能读写本域内的资源，而无法访问其它域的资源。这种安全限制称为同源策略。现代浏览器在安全性和可用性之间选择了一个平衡点。在遵循同源策略的基础上，选择性地为同源策略开放了后门。例如img，script，style等标签，都允许跨域引用资源，然而，也只能是引用这些资源而已，并不能">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-15T14:14:10.041Z">
+<meta property="og:updated_time" content="2018-10-19T12:50:57.839Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Promise学习小结">
-<meta name="twitter:description" content="用promise手写ajax123456789101112131415161718192021222324// ajax函数将返回Promise对象:function ajax(method, url, data) &amp;#123;    var request = new XMLHttpRequest();    return new Promise(function (resolve, rejec">
+<meta name="twitter:title" content="跨域知识总结">
+<meta name="twitter:description" content="什么情况算是跨域？同ip（或domin），同端口，同协议视为同一个域，一个域内的脚本仅仅具有本域内的权限，可以理解为本域脚本只能读写本域内的资源，而无法访问其它域的资源。这种安全限制称为同源策略。现代浏览器在安全性和可用性之间选择了一个平衡点。在遵循同源策略的基础上，选择性地为同源策略开放了后门。例如img，script，style等标签，都允许跨域引用资源，然而，也只能是引用这些资源而已，并不能">
 
 
 
@@ -120,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://www.scuzb.com/2018/09/15/Promise学习小结/"/>
+  <link rel="canonical" href="http://www.scuzb.com/2018/10/19/跨域知识总结/"/>
 
 
 
 
 
-  <title>Promise学习小结 | 博客</title>
+  <title>跨域知识总结 | 博客</title>
   
 
 
@@ -288,7 +287,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.scuzb.com/2018/09/15/Promise学习小结/">
+    <link itemprop="mainEntityOfPage" href="http://www.scuzb.com/2018/10/19/跨域知识总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="且听风吟">
@@ -305,7 +304,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Promise学习小结</h1>
+          <h1 class="post-title" itemprop="name headline">跨域知识总结</h1>
         
 
         <div class="post-meta">
@@ -317,8 +316,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-15T22:06:43+08:00">
-                2018-09-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-19T20:31:44+08:00">
+                2018-10-19
               </time>
             
 
@@ -328,28 +327,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/EMCAscript/" itemprop="url" rel="index">
-                    <span itemprop="name">EMCAscript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -358,8 +335,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/09/15/Promise学习小结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/15/Promise学习小结/" itemprop="commentCount"></span>
+                <a href="/2018/10/19/跨域知识总结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/19/跨域知识总结/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -386,7 +363,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.6k
+                  2.4k
                 </span>
               
 
@@ -402,7 +379,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  10
                 </span>
               
             </div>
@@ -423,10 +400,21 @@
       
 
       
-        <p>用promise手写ajax<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">// ajax函数将返回Promise对象:</span><br><span class="line">function ajax(method, url, data) &#123;</span><br><span class="line">    var request = new XMLHttpRequest();</span><br><span class="line">    return new Promise(function (resolve, reject) &#123;</span><br><span class="line">        request.onreadystatechange = function () &#123;</span><br><span class="line">            if (request.readyState === 4) &#123;</span><br><span class="line">                if (request.status === 200) &#123;</span><br><span class="line">                    resolve(request.responseText);</span><br><span class="line">                &#125; else &#123;</span><br><span class="line">                    reject(request.status);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        request.open(method, url);</span><br><span class="line">        request.send(data);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line">var log = document.getElementById(&apos;test-promise-ajax-result&apos;);</span><br><span class="line">var p = ajax(&apos;GET&apos;, &apos;/api/categories&apos;);</span><br><span class="line">p.then(function (text) &#123; // 如果AJAX成功，获得响应内容</span><br><span class="line">    log.innerText = text;</span><br><span class="line">&#125;).catch(function (status) &#123; // 如果AJAX失败，获得响应代码</span><br><span class="line">    log.innerText = &apos;ERROR: &apos; + status;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
-<h1 id="什么是Promise？"><a href="#什么是Promise？" class="headerlink" title="什么是Promise？"></a>什么是Promise？</h1><p>下面的回答很像在背概念，但是很精辟<br>所谓Promise，简单说就是一个容器，里面保存着某个未来才会结束的事件的结果。从语法上说，Promise 是一个对象，从它可以获取异步操作的消息。Promise 提供统一的 API，各种异步操作都可以用同样的方法进行处理，让开发者不用再关注于时序和底层的结果。Promise的状态具有不受外界影响和不可逆两个特点。<br>传统的回调式异步操作有什么缺点？（Promise是如何解决异步操作）<br>传统的回调有五大信任问题：<br>调用回调过早<br>调用回调过晚（或没有被调用）<br>调用回调次数过少或过多<br>未能传递所需的环境和参数<br>吞掉可能出现的错误和异常</p>
-<h1 id="Promise的解决办法："><a href="#Promise的解决办法：" class="headerlink" title="Promise的解决办法："></a>Promise的解决办法：</h1><p>1.调用回调过早<br>对于Promise来说，即使是立即完成的Promise也无法被同步观察到，也就是说一个Promise调用then()的时候，即使这个Promise已经决议了，提供给then的回调也总会被异步调用。<br>2.调用回调过晚（或没有被调用）<br>对于一个Promise对象注册的每一个观察回调都是相对独立、互不干预的。而Promise对象调用resolve()和reject()时，每个注册的观察回调也都会被自动调度。所以这些观察回调的任意一个都无法影响或延误对其他回调的调用。<br>此外，关于回调未调用。正常情况下，没有任何东西可以阻止Promise向你通知它的决议，即使你的JavaScript代码报错了，一会通过异常回调来捕获到。如果Promise永远不被决议的话，Promise本身已提供了竞态的抽象机制来作为解决方案。<br>3.调用回调次数过少或过多<br>Promise的定义方式使得它只能被决议一次。即使代码中出现多次决议，这个Promise也会接受第一次决议，并会忽略掉其他任何后续调用。所以任何通过then()注册的回调只会被调用一次。<br>4.未能传递所需的环境和参数<br>凡是被决议的值都会传递到观察回调中，如果没有显示的决议值也会传递一个undefined给观察回调。需要注意的是，Promise只允许传一个决议值，其他值将会被默默忽略掉。<br>5.吞掉可能出现的错误和异常<br>如果在创建Promise时，存在JavaScript代码错误，会直接导致该Promise的拒绝决议，那么你可以通过reject()来捕获异常，代码中的任何异常都不会吞掉。<br>以上的回答十分的啰嗦，但是如果上面的五点你都能记住的话，你会了解很多关于Promise的细节问题，也会应对一些面试官的追问，如Promise的then()会不会被重复调用 等。<br>Promise中的异步模式有哪些？有什么区别？<br>好吧，这个问题可能会把面试者问懵……可以考虑另一种问法，或者直接进入下一个问题，说一说Promise.all()和Promise.race()的区别。因为ES6中的Promise中只有这两个模式all和race，其他的如first、any、last等都是其他Promise库提供的。<br>回到问题本身，Promise.all()和Promise.race()的区别<br>all会将传入的数组中的所有promise全部决议以后，将决议值以数组的形式传入到观察回调中，任何一个promise决议为拒绝，那么就会调用拒绝回调。<br>race会将传入的数组中的所有promise中第一个决议的决议值传递给观察回调，即使决议结果是拒绝。<br>如果向Promise.all()和Promise.race()传递空数组，运行结果会有什么不同？<br>all会立即决议，决议结果是fullfilled，值是undefined<br>race会永远都不决议，程序卡死……<br>如何确保一个变量是可信任的Promise（Promise.resolve方法传入不同值的不同处理有哪些）<br>可以通过Promise.resolve()方法对不确定的值进行Promise化，返回一个Promise对象。<br>如果是一个立即值，如一个普通变量，那么该Promise会立即决议为成功。<br>如果是一个Promise值，那么会将该Promise直接返回赋值给这个Promise，不会有额外开销。<br>如果是一个类Promise值， 比如其中含有名称为then的成员变量，那么会将then展开形成一个新的Promise对象。<br>Promise是如何捕获异常的？与传统的try/catch相比有什么优势？<br>传统的try/catch捕获异常方式是无法捕获异步的异常的，代码如下：<br>try {<br>    setTimeout(function(){<br>        undefined();        //undefined不是一个方法，会抛出异常<br>    }, 500)} catch(err){<br>    //这里并不能捕获异常<br>    console.log(err);}<br>而对于Promise对象来说，构造Promise实例时的代码如果出错，则会被认为是一个拒绝的决议，并会向观察回调中传递异常信息。所以即使是一个异步的请求，Promise也是可以捕获异常的。此外，Promise还可以通过catch回调来捕获回调中的异常。<br>Promise是一个不错异步操作解决方案，他解决了传统的通过回调和事件来解决异步操作的诸多问题，如“竞争”，回调信任度低的问题。ES6中也提供了标准的Promise供大家使用。<br>如何解决异步回调地狱<br>promise、generator、async/await<br>有三个函数，内部实现都是异步的，怎么让这三个函数变成一个同步的，以节省时间<br>promise.all<br>Promise状态<br>一个promise可能有三种状态：等待（pending）、已完成（fulfilled）、已拒绝（rejected）。</p>
-
+        <h1 id="什么情况算是跨域？"><a href="#什么情况算是跨域？" class="headerlink" title="什么情况算是跨域？"></a>什么情况算是跨域？</h1><p>同ip（或domin），同端口，同协议视为同一个域，一个域内的脚本仅仅具有本域内的权限，可以理解为本域脚本只能读写本域内的资源，而无法访问其它域的资源。这种安全限制称为同源策略。现代浏览器在安全性和可用性之间选择了一个平衡点。在遵循同源策略的基础上，选择性地为同源策略开放了后门。例如img，script，style等标签，都允许跨域引用资源，然而，也只能是引用这些资源而已，并不能读取这些资源的内容。<br>Cookie、localStorage、Dom元素、AJAX、iframe都有同源策略。</p>
+<h1 id="为什么要有跨域的限制？"><a href="#为什么要有跨域的限制？" class="headerlink" title="为什么要有跨域的限制？"></a>为什么要有跨域的限制？</h1><p>访问端口号或域名或协议不同的url，就形成了跨域。<br>如果没有跨域的限制，会存在CSRF(跨站脚本请求伪造)漏洞。Cross-Site Request Forgeries，CSRF攻击是指攻击者通过设置好的陷阱，强制对已经完成认证的用户进行非预期的个人信息或者设定信息等某些状态更新，属于被动攻击。</p>
+<h1 id="防止CSRF攻击的方法"><a href="#防止CSRF攻击的方法" class="headerlink" title="防止CSRF攻击的方法:"></a>防止CSRF攻击的方法:</h1><p>1.验证码<br>2.referrer check<br>3.token, 由于攻击者不能获得cookie(理论上), 因此发送请求的时候(post/get)带上token(其实就是伪随机数)。</p>
+<h1 id="跨域请求资源有哪几种方式？"><a href="#跨域请求资源有哪几种方式？" class="headerlink" title="跨域请求资源有哪几种方式？"></a>跨域请求资源有哪几种方式？</h1><p>Jsonp 、cors 、postMessage、document.domain、window.name 、location.hash 、http-proxy、 nginx、 websocket</p>
+<h1 id="JSONP的原理"><a href="#JSONP的原理" class="headerlink" title="JSONP的原理"></a>JSONP的原理</h1><p>JSONP是JSON with padding的缩写，即填充式JSON或参数式JSON，是被包含在函数调用中的JSON，如下面的样子：<br>callback({“name”: “Chong”});<br>JSONP是通过动态<script>元素来实现的，使用时可以为src属性指定一个跨域URL。由于浏览器加载脚本是不受同源规则限制的，所以即使是跨域的URL同样可以发送请求。因为JSONP是有效的JavaScript代码，所以再请求完成后，即在JSONP响应加载到页面中以后，就会立即执行。<br>web客户端通过与调用脚本一模一样的方式，来调用跨域服务器上动态生成的js格式文件（一般以JSON为后缀），显而易见，服务器之所以要动态生成JSON文件，目的就在于把客户端需要的数据装入进去。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">//jsonp只能发送get请求，不支持post put delete</span><br><span class="line">//不安全 xss攻击：跨站脚本攻击</span><br><span class="line">function jsonp(&#123;url,params,cb&#125;)&#123;</span><br><span class="line">	return new Promise((resolve,reject)=&gt;&#123;</span><br><span class="line">		let script=document.createElement(“script”);</span><br><span class="line">		//声明一个全局函数</span><br><span class="line">		window[cb]=function(data)&#123;</span><br><span class="line">			//把数据传出去，并删除script标签</span><br><span class="line">			resolve(data);</span><br><span class="line">			document.body.removeChild(script);</span><br><span class="line">		&#125;</span><br><span class="line">		params=&#123;...params,cb&#125;;//wd=b&amp;cb=show</span><br><span class="line">		let arrs=[];</span><br><span class="line">		for(let key in params)&#123;</span><br><span class="line">			arrs.push(`$&#123;url&#125;=$&#123;arrs.join(&apos;&amp;&apos;)&#125;`);</span><br><span class="line">		&#125;</span><br><span class="line">		script.src=`$&#123;url&#125;?&#123;arrs.jion(&apos;&amp;&apos;)&#125;`;</span><br><span class="line">		document.body.appendChild(script);</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//调用jsonp函数</span><br><span class="line">jsonp(&#123;</span><br><span class="line">	url:http://localhost:3000/say,</span><br><span class="line">	params:&#123;wd:&apos;b&apos;&#125;,</span><br><span class="line">	cb:&apos;show&apos;,</span><br><span class="line">&#125;).then(data=&gt;&#123;</span><br><span class="line">	console.log(data);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">//服务端</span><br><span class="line">let express=require(&apos;express&apos;);</span><br><span class="line">let app=express();</span><br><span class="line">app.get(&apos;/say&apos;,function(req,res)&#123;</span><br><span class="line">	let &#123;wd,cb&#125;=req.query;</span><br><span class="line">	console.log(wd);</span><br><span class="line">//执行cb（）函数</span><br><span class="line">	res.end(`$&#123;cb&#125;(&apos;我不爱你&apos;)`);</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(3000);</span><br></pre></td></tr></table></figure></p>
+<p>优点：简单易用，浏览器支持好。<br>缺点：<br>1.JSONP是从其他域中加载代码并执行，所以存在很多安全隐患，如果其他服务器在响应中夹带恶意代码的话，没有办法防范。<br>2.JSONP难以确定请求失败的情况。HTML5中给<script>元素增加了一个onerror事件，但是还是有浏览器不支持。<br>3.只能发送GET请求。</p>
+<h1 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h1><p>CORS是Cross-Origin Resource Sharing的缩写，即跨域资源共享。CORS的基本思想就是使用自定义的HTTP头部让浏览器与服务器进行沟通，从而决定请求或响应是应该成功，还是应该失败。<br>当使用 XMLHttpRequest 发送请求时，浏览器如果发现违反了同源策略就会自动加上一个请求头 origin，后端在接受到请求后确定响应后会在 Response Headers 中加入一个属性 Access-Control-Allow-Origin，值就是发起请求的源地址(<a href="http://127.0.0.1:8888)，浏览器得到响应会进行判断">http://127.0.0.1:8888)，浏览器得到响应会进行判断</a> Access-Control-Allow-Origin 的值是否和当前的地址相同，只有匹配成功后才进行响应处理。<br>CORS分为两种:<br>简单请求<br>GET, HEAD, POST, 注意，当是POST方法时，Content-Type只有为下列三个字段才算是简单请求。 <em> text/plain </em> multipart/form-data * application/x-www-form-urlencoded<br>简单请求的过程：<br>1.浏览器直接发送CORS请求，具体来说，就是在头部中，添加一个Origin字段。<br>2.如果Origin指定的源，不在许可范围内，会报跨域。<br>3.如果在的话，服务器会返回的响应，会多几个头部字段。<br>Access-Control-Allow-Origin<br>Access-Control-Allow-Credentials, 表示是否允许发送cookie<br>Access-Control-Expose-Headers, 可选字段<br>非简单请求<br>非简单请求是那种对服务器有特殊要求的请求，比如请求方法是PUT或DELETE，或者Content-Type字段的类型是application/json。<br>非简单请求的CORS请求，会在正式通信之前，增加一次HTTP查询请求，称为”预检”请求（preflight）。<br>浏览器先询问服务器，当前网页所在的域名是否在服务器的许可名单之中，以及可以使用哪些HTTP动词和头信息字段。只有得到肯定答复，浏览器才会发出正式的XMLHttpRequest请求，否则就报错。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">//服务端</span><br><span class="line">let express=require(&apos;express&apos;);</span><br><span class="line">let app=express();</span><br><span class="line">app.get(&apos;/say&apos;,function(req,res)&#123;</span><br><span class="line">	let &#123;wd,cb&#125;=req.query;</span><br><span class="line">	console.log(wd);</span><br><span class="line">	//执行cb(&apos;我不爱你&apos;)</span><br><span class="line">	res.end(`$&#123;cb&#125;(&apos;我不爱你&apos;)`);</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(3000);</span><br><span class="line"></span><br><span class="line">let express=requie(&apos;express&apos;);</span><br><span class="line">let app=express();</span><br><span class="line">let whiteList=[&apos;http://localhost:3000&apos;];</span><br><span class="line">app.use(function(req,res,next)&#123;</span><br><span class="line">	let origin=req.headers.origin;</span><br><span class="line">	if(whiteList.includes(origin))&#123;</span><br><span class="line">		//设置哪个源可以访问我</span><br><span class="line">		res.setHeader(&apos;Access-Control-Allow-Origin&apos;,origin);</span><br><span class="line">		//允许携带哪个头访问我</span><br><span class="line">		res.setHeader(&apos;Access-Control-Allow-Headers&apos;,&apos;name&apos;);</span><br><span class="line">		//允许哪个方法访问我</span><br><span class="line">		res.setHeader(&apos;Access-Control-Allow-Methods&apos;,&apos;PUT&apos;);</span><br><span class="line">		//允许携带cookie</span><br><span class="line">		res.setHeader(&apos;Access-Control-Allow-Credentials&apos;,true);</span><br><span class="line">		//预检的存活时间</span><br><span class="line">		res.setHeader(&apos;Access-Control-Max-Age&apos;,6);</span><br><span class="line">		next();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br><span class="line">app.get(&apos;/getData&apos;,function(req.res)&#123;</span><br><span class="line"></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">//前端ajax请求</span><br><span class="line">let xhr=new XMLHttpRequest;</span><br><span class="line">document.cookie=&apos;name=zf&apos;;</span><br><span class="line">//是否创建一个跨站点访问控制请求</span><br><span class="line">xhr.wihtCredentials=true;</span><br><span class="line">xhr.open(&apos;PUT&apos;,&apos;http://localhost:4000/getData&apos;,true);</span><br><span class="line">xhr.setRequestHeader(&apos;name&apos;,&apos;zfpx&apos;);</span><br><span class="line">xhr.onreadystatechange=function()&#123;</span><br><span class="line">	if(xhr.readyState===4)&#123;</span><br><span class="line">		if(xhr.status&gt;=200&amp;&amp;xhr.status&lt;300||xhr.status===304)&#123;</span><br><span class="line">			console.log(xhr.response);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="postMessage"><a href="#postMessage" class="headerlink" title="postMessage"></a>postMessage</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">//a.html引入b.html</span><br><span class="line">&lt;iframe src=&quot;http://localhost:4000/b.html&quot; id=&quot;frame&quot; onload=&quot;load()&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	function load()&#123;</span><br><span class="line">		let frame=document.getElementById(&apos;frame&apos;);</span><br><span class="line">		frame.contentWindow.postMessage(&apos;我爱你&apos;,&apos;http://localhost:4000&apos;);</span><br><span class="line">		window.onmessage=function(e)&#123;</span><br><span class="line">			console.log(e.data);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">//b.html</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	//接受a.html传过来的数据</span><br><span class="line">	window.onmessage=function(e)&#123;</span><br><span class="line">		console.log(e.data);</span><br><span class="line">		//向a.html返回数据</span><br><span class="line">		e.source.postMessage(&apos;我不爱你&apos;,e.origin);</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="Window-name"><a href="#Window-name" class="headerlink" title="Window.name"></a>Window.name</h1><p>A和b是同域的 <a href="http://localhost:3000">http://localhost:3000</a>;<br>C是独立的 <a href="http://localhost:4000">http://localhost:4000</a><br>A获取c的数据<br>A先引用c，c把值放到window.name，把a引用的地址改到b<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">//a.html先引用c.html</span><br><span class="line">&lt;iframe src=&quot;http://localhost:4000/c.html&quot; id=&quot;frame&quot; onload=&quot;load()&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	let first=true;</span><br><span class="line">	function load()&#123;</span><br><span class="line">		if(first)&#123;</span><br><span class="line">			//第一次加载，把iframe的地址改成b的地址</span><br><span class="line">			let frame=document.getElementById(&apos;frame&apos;);</span><br><span class="line">			iframe.src=&apos;http://localhost:3000/b.html&apos;;</span><br><span class="line">			first=false;</span><br><span class="line">		&#125;else&#123;</span><br><span class="line">			//再次加载，b和是同域，contentWindow是获取iframe里面的window对象</span><br><span class="line">			console.log(iframe.contentWindow.name);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">//c.html c是不同域的</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	window.name=&quot;我不爱你&quot;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<h1 id="document-domain"><a href="#document-domain" class="headerlink" title="document.domain"></a>document.domain</h1><p>baidu.com 一级域名<br>tieba.baidu .com 二级域名<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//a：www.baidu.com 先在a中引入b</span><br><span class="line">//b: map.baidu.com</span><br><span class="line">&lt;iframe src=&quot;map.baidu.com/b.html&quot; id=&quot;frame&quot; onload=&quot;load()&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	document.domain=&apos;baidu.com&apos;;</span><br><span class="line">	function load()&#123;</span><br><span class="line">		console.log(frame.contentWindow.a);</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">//b.html</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	var a=100;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<h1 id="Websocket"><a href="#Websocket" class="headerlink" title="Websocket"></a>Websocket</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">//websocket是高级API，一般不兼容，使用socket.io库</span><br><span class="line">//客户端</span><br><span class="line">let socket=new WebSocket(&apos;ws://localhost:3000&apos;);</span><br><span class="line">socket.onopen=function()&#123;</span><br><span class="line">	socket.send(&apos;我爱你&apos;);</span><br><span class="line">&#125;</span><br><span class="line">socket.onmessage=function(e)&#123;</span><br><span class="line">	console.log(e.data);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//服务端</span><br><span class="line">let app=express();</span><br><span class="line">let WebSocket=require(&apos;ws&apos;);</span><br><span class="line">let wss=new WebSocket.Server(&#123;port:3000&#125;);</span><br><span class="line">wss.on(&apos;connection&apos;,function(ws)&#123;</span><br><span class="line">	ws.on(&apos;message&apos;,function(data)&#123;</span><br><span class="line">		console.log(data);</span><br><span class="line">		ws.send(&apos;我不爱你&apos;);</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h1 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h1><p>Nginx相当于一个服务器，安装好，只需要配置nginx.conf即可<br>Nginx下会有几个文件夹html，js，css，json<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">location ~.*\.json&#123;</span><br><span class="line">	//到json文件夹去找</span><br><span class="line">	root json;</span><br><span class="line">	add_header &quot;Access-Control-Allow-origin&quot; &quot;*&quot;;</span><br><span class="line">&#125;</span><br><span class="line">命令行 nginx s reload</span><br></pre></td></tr></table></figure></p>
+<h1 id="AJAX跨域，有哪些解决方法，访问子域算不算跨域"><a href="#AJAX跨域，有哪些解决方法，访问子域算不算跨域" class="headerlink" title="AJAX跨域，有哪些解决方法，访问子域算不算跨域?"></a>AJAX跨域，有哪些解决方法，访问子域算不算跨域?</h1><p>在某些应用场景下，需要在主域中，调用子域中的某个接口，如果直接在主域中向子域发ajax请求，会报跨域错误，可以用iframe来解决这种跨域问题。<br>在主域的A页面中要用iframe把B页面url地址引过来。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe id=&quot;iframe&quot; src=&quot;http://baike.baidu.com/B.html&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    $(function()&#123;</span><br><span class="line">           try&#123;</span><br><span class="line">              document.domain = &quot;www.baidu.com&quot;;</span><br><span class="line">           &#125;catch(e)&#123;&#125;</span><br><span class="line">           $(&quot;#iframe&quot;).load(function()&#123;</span><br><span class="line">               var iframe = $(&quot;#iframe&quot;).contentDocument.$;</span><br><span class="line">               iframe.get(&quot;http://baike.baidu.com/接口&quot;,function(data)&#123;&#125;);</span><br><span class="line">           &#125;);</span><br><span class="line">     &#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+</script></p>
       
     </div>
     
@@ -441,12 +429,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/学习/" rel="tag"># 学习</a>
-          
-        </div>
-      
 
       
       
@@ -456,8 +438,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/15/JavaScript异步与回调函数/" rel="next" title="JavaScript异步与回调函数">
-                <i class="fa fa-chevron-left"></i> JavaScript异步与回调函数
+              <a href="/2018/10/17/Promise基础/" rel="next" title="Promise基础">
+                <i class="fa fa-chevron-left"></i> Promise基础
               </a>
             
           </div>
@@ -465,10 +447,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/16/跨域知识小结/" rel="prev" title="跨域知识小结">
-                跨域知识小结 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -617,7 +595,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是Promise？"><span class="nav-number">1.</span> <span class="nav-text">什么是Promise？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Promise的解决办法："><span class="nav-number">2.</span> <span class="nav-text">Promise的解决办法：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么情况算是跨域？"><span class="nav-number">1.</span> <span class="nav-text">什么情况算是跨域？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么要有跨域的限制？"><span class="nav-number">2.</span> <span class="nav-text">为什么要有跨域的限制？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#防止CSRF攻击的方法"><span class="nav-number">3.</span> <span class="nav-text">防止CSRF攻击的方法:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#跨域请求资源有哪几种方式？"><span class="nav-number">4.</span> <span class="nav-text">跨域请求资源有哪几种方式？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JSONP的原理"><span class="nav-number">5.</span> <span class="nav-text">JSONP的原理</span></a></li></ol></div>
             
 
           </div>
