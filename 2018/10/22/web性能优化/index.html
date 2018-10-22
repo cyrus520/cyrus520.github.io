@@ -79,13 +79,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="博客">
-<meta property="og:url" content="http://www.scuzb.com/tags/导航/index.html">
+<meta name="description" content="首屏加载白屏的解决办法白屏原因1-在弱网络下(2G网路或者GPRS网络) ,网络延迟，JS加载延迟 ,会阻塞页面2-客户端存在bug，缓存模块错乱，不缓存js等后来挂起的文件，以及乱缓存index.html统计白屏数量：监听某个主DIV的变化（因为是单页面的应用，所以总会有个入口DIV来监听），白屏即是该DIV没有在规定时间内被放入东西，所以只要在规定时间内该DIV没有变化，那就可以进行白屏统计了">
+<meta property="og:type" content="article">
+<meta property="og:title" content="web性能优化">
+<meta property="og:url" content="http://www.scuzb.com/2018/10/22/web性能优化/index.html">
 <meta property="og:site_name" content="博客">
+<meta property="og:description" content="首屏加载白屏的解决办法白屏原因1-在弱网络下(2G网路或者GPRS网络) ,网络延迟，JS加载延迟 ,会阻塞页面2-客户端存在bug，缓存模块错乱，不缓存js等后来挂起的文件，以及乱缓存index.html统计白屏数量：监听某个主DIV的变化（因为是单页面的应用，所以总会有个入口DIV来监听），白屏即是该DIV没有在规定时间内被放入东西，所以只要在规定时间内该DIV没有变化，那就可以进行白屏统计了">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://www.scuzb.com/2018/10/22/web性能优化/loading.gif">
+<meta property="og:updated_time" content="2018-10-22T15:04:07.563Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客">
+<meta name="twitter:title" content="web性能优化">
+<meta name="twitter:description" content="首屏加载白屏的解决办法白屏原因1-在弱网络下(2G网路或者GPRS网络) ,网络延迟，JS加载延迟 ,会阻塞页面2-客户端存在bug，缓存模块错乱，不缓存js等后来挂起的文件，以及乱缓存index.html统计白屏数量：监听某个主DIV的变化（因为是单页面的应用，所以总会有个入口DIV来监听），白屏即是该DIV没有在规定时间内被放入东西，所以只要在规定时间内该DIV没有变化，那就可以进行白屏统计了">
+<meta name="twitter:image" content="http://www.scuzb.com/2018/10/22/web性能优化/loading.gif">
 
 
 
@@ -115,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://www.scuzb.com/tags/导航/"/>
+  <link rel="canonical" href="http://www.scuzb.com/2018/10/22/web性能优化/"/>
 
 
 
 
 
-  <title>标签: 导航 | 博客</title>
+  <title>web性能优化 | 博客</title>
   
 
 
@@ -140,7 +146,7 @@
     
   
 
-  <div class="container sidebar-position-right ">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/cyrus520" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>
 
@@ -269,54 +275,192 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>导航<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.scuzb.com/2018/10/22/web性能优化/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="且听风吟">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/09/05/JavaScript加载时间线/" itemprop="url">
-              
-                <span itemprop="name">JavaScript加载时间线</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">web性能优化</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-05T15:02:35+08:00"
-              content="2018-09-05" >
-          09-05
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-22T23:02:27+08:00">
+                2018-10-22
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/10/22/web性能优化/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/22/web性能优化/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读量<i class="fa fa-file-o"> </i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2.2k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  7
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="首屏加载白屏的解决办法"><a href="#首屏加载白屏的解决办法" class="headerlink" title="首屏加载白屏的解决办法"></a>首屏加载白屏的解决办法</h1><h2 id="白屏原因"><a href="#白屏原因" class="headerlink" title="白屏原因"></a>白屏原因</h2><p>1-在弱网络下(2G网路或者GPRS网络) ,网络延迟，JS加载延迟 ,会阻塞页面<br>2-客户端存在bug，缓存模块错乱，不缓存js等后来挂起的文件，以及乱缓存index.html<br>统计白屏数量：<br>监听某个主DIV的变化（因为是单页面的应用，所以总会有个入口DIV来监听），白屏即是该DIV没有在规定时间内被放入东西，所以只要在规定时间内该DIV没有变化，那就可以进行白屏统计了。</p>
+<h2 id="现象："><a href="#现象：" class="headerlink" title="现象："></a>现象：</h2><p>1-首页直出时间过长<br>2-依赖js没加载完全<br>3-文件依赖关系表map.js加载不正确<br>4-接口调用时间过长</p>
+<h2 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h2><p>（1） 如果是基于 Cake[3] 工具开发的，也可以直接用首屏填充伪标签。<br>（2） 尽量同步输出，异步输出请尽量 mock 出现在首屏的模板。<br>（3） 需要使用nodejs直出了，通过在服务端增加一个nodejs中间层，由nginx将前端的请求转发到nodejs上，nodejs响应请求，加载资源，向底层的cgi进行API请求，之后进行拼接，返回html页面，这样资源跟api的请求时间都在服务端完成，缩短了时间，至于模板之类的，还是能够用到前端。当然nodejs也会有请求资源错误的情况，这个时候就需要返回错误标志给前端，前端再发起原来的异步请求，这种方式相当于一种容灾保障。<br>（4）因为是应用方式，所以总是难免存在一些基础依赖，比如modjs，backbone, underscore, jquery等，这种一般都会通过打包成一个js来减少http请求以及文件大小。针对这种情况，只能通过打包模式，加载资源的模式进行改进。强烈按照“首页必须”进行开发，按需加载，其他的资源可以放在二屏，毕竟首页决定着是否还会继续使用。<br>（5） 尽量减少文件夹的嵌套，文件名不要过长<br>接口调用时间过长也会导致单页面应用的加载时间过长，这种我们主要是前端需要给接口设置timeout<br>（6）可订制的客户端，也可以仿照（manifest/appcache，不完善不适合）做一个缓存机制，即是判断服务器版本是否与客户端保存的资源一致，不一致即下载新的，一致即直接使用本地的，这样就变成一个类本地应用了。<br>注意：fis的mod.js和map.js的坑</p>
+<h1 id="界面有大量的图片，怎样去加快加载时间"><a href="#界面有大量的图片，怎样去加快加载时间" class="headerlink" title="界面有大量的图片，怎样去加快加载时间"></a>界面有大量的图片，怎样去加快加载时间</h1><p>对于图片过多的页面，为了加速页面加载速度，所以很多时候我们需要将页面内未出现在可视区域内的图片先不做加载， 等到滚动到可视区域后再去加载。这样子对于页面加载性能上会有很大的提升，也提高了用户体验。图片懒加载，在页面上的未可视区域可以添加一个滚动条事件，判断图片位置与浏览器顶端的距离与页面的距离，如果前者小于后者，优先加载。<br>其实原理上很简单，在页面载入的时候将页面上的img标签的src指向一个小图片， 把真实地址存放在一个自定义属性中，这里我用data-src来存放，如下。<br><img src="loading.gif" data-src="http://xxx.ooo.com"><br>然后将页面img标签获取并保存，开启一个定时器，遍历保存的img标签，判断其位置是否出现在了可视区域内。如果出现在可视区域了那么就把真实的src地址给赋值上。<br>并且从数组中删除，避免重复判断。 那么你可能会问，如何判断是否出现在可视区域内吗？<br>那就是你可以获取当前img的相对于文档顶的偏移距离减去scrollTop的距离，然后和浏览器窗口高度在进行比较，如果小于浏览器窗口则出现在了可视区域内了，反之，则没有。</p>
+<h1 id="web前端性能优化："><a href="#web前端性能优化：" class="headerlink" title="web前端性能优化："></a>web前端性能优化：</h1><p>内容优化<br>(1)减少HTTP请求数:这条策略是最重要最有效的，因为一个完整的请求要经过DNS寻址，与服务器建立连接，发送数据，等待服务器响应，接收数据这样一个消耗时间成本和资源成本的复杂的过程。常见方法：合并多个CSS文件和js文件，利用CSS Sprites整合图像，Inline Images(使用 data：URL scheme在实际的页面嵌入图像数据 )，合理设置HTTP缓存等。<br>(2)减少DNS查找：域名解析 –&gt; 发起TCP的3次握手 –&gt; 建立TCP连接后发起http请求 –&gt; 服务器响应http请求，浏览器得到html代码 –&gt; 浏览器解析html代码，并请求html代码中的资源（如js、css、图片等） –&gt; 浏览器对页面进行渲染呈现给用户<br>(3)避免重定向：重定向用于将用户从一个URL重新路由到另一个URL。<br>(4)使用Ajax缓存：在进行Ajax请求的时候，可以选择尽量使用get方法，这样可以使用客户端的缓存，提高请求速度。<br>(5)延迟加载组件,预加载组件<br>(6)减少DOM元素数量:页面中存在大量DOM元素,会导致javascript遍历DOM的效率变慢。<br>(7)最小化iframe的数量：iframes 提供了一个简单的方式把一个网站的内容嵌入到另一个网站中。但其创建速度比其他包括JavaScript和CSS的DOM元素的创建慢了1-2个数量级。<br>(8)避免404：HTTP请求时间消耗是很大的，因此使用HTTP请求来获得一个没有用处的响应（例如404没有找到页面）是完全没有必要的，它只会降低用户体验而不会有一点好处。<br>服务器优化<br>(1)使用内容分发网络（CDN）：CDN（内容发布网络）是一组分布在多个不同地理位置的Web服务器，用于更加有效地向用户发布内容。把网站内容分散到多个、处于不同地域位置的服务器上可以加快下载速度。<br>(2)GZIP压缩：Web客户端可以通过HTTP请求中的Accept-Encoding头来表示对压缩的支持：Accept-Encoding: gzip,deflate<br>(3)设置ETag：ETags（Entity tags，实体标签）是web服务器和浏览器用于判断浏览器缓存中的内容和服务器中的原始内容是否匹配的一种机制。<br>(4)提前刷新缓冲区<br>Cookie优化S<br>(1)减小Cookie大小<br>(2)针对Web组件使用域名无关的Cookie<br>javascript优化<br>(1)将JavaScript脚本放在页面的底部。<br>(2)将JavaScript和CSS作为外部文件来引用：在实际应用中使用外部文件可以提高页面速度，因为JavaScript和CSS文件都能在浏览器中产生缓存。<br>(3)缩小JavaScript和CSS<br>(4)删除重复的脚本：在团队开发一个项目时，由于不同开发者之间都可能会向页面中添加页面或组件，因此可能相同的脚本会被添加多次。<br>(5)最小化DOM的访问：使用JavaScript访问DOM元素比较慢。<br>(6)开发智能的事件处理程序<br>(7)javascript代码注意：谨慎使用with,避免使用eval Function函数,减少作用域链查找。<br>图像优化<br>(1)优化图片大小<br>(2)通过CSS Sprites优化图片<br>(3)不要在HTML中使用缩放图片<br>(4)favicon.ico要小而且可缓存</p>
+<h1 id="前端开发的优化问题（看雅虎14条性能优化原则）。"><a href="#前端开发的优化问题（看雅虎14条性能优化原则）。" class="headerlink" title="前端开发的优化问题（看雅虎14条性能优化原则）。"></a>前端开发的优化问题（看雅虎14条性能优化原则）。</h1><p>  （1） 减少http请求次数：CSS Sprites, JS、CSS源码压缩、图片大小控制合适；网页Gzip，CDN托管，data缓存 ，图片服务器。<br>  （2） 前端模板 JS+数据，减少由于HTML标签导致的带宽浪费，前端用变量保存AJAX请求结果，每次操作本地变量，不用请求，减少请求次数<br>  （3） 用innerHTML代替DOM操作，减少DOM操作次数，优化javascript性能。<br>  （4） 当需要设置的样式很多时设置className而不是直接操作style。<br>  （5） 少用全局变量、缓存DOM节点查找的结果。减少IO读取操作。<br>  （6） 避免使用CSS Expression（css表达式)又称Dynamic properties(动态属性)。<br>  （7） 图片预加载，将样式表放在顶部，将脚本放在底部  加上时间戳。<br>  （8） 避免在页面的主体布局中使用table，table要等其中的内容完全下载之后才会显示出来，显示比div+css布局慢。</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/19/跨域知识总结/" rel="next" title="跨域知识总结">
+                <i class="fa fa-chevron-left"></i> 跨域知识总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -324,6 +468,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -344,8 +495,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -419,6 +579,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#首屏加载白屏的解决办法"><span class="nav-number">1.</span> <span class="nav-text">首屏加载白屏的解决办法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#白屏原因"><span class="nav-number">1.1.</span> <span class="nav-text">白屏原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#现象："><span class="nav-number">1.2.</span> <span class="nav-text">现象：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案："><span class="nav-number">1.3.</span> <span class="nav-text">解决方案：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#界面有大量的图片，怎样去加快加载时间"><span class="nav-number">2.</span> <span class="nav-text">界面有大量的图片，怎样去加快加载时间</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#web前端性能优化："><span class="nav-number">3.</span> <span class="nav-text">web前端性能优化：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#前端开发的优化问题（看雅虎14条性能优化原则）。"><span class="nav-number">4.</span> <span class="nav-text">前端开发的优化问题（看雅虎14条性能优化原则）。</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -568,6 +744,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
